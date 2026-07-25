@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notarkiv – Arrangemang för blåsorkester & brassensemble | Noter.nu</title>
+<meta name="description" content="Fullständig katalog: 36 arrangemang för blåsorkester och brassensemble av Hans Bjermqvist. Titel, besättning, svårighetsgrad, speltid, pris och lyssningslänk för varje verk.">
+<link rel="canonical" href="https://katalog.noter.nu/">
+<style>
+  :root{
+    --ink:#1b2a41;
+    --parchment:#f7f3e9;
+    --parchment-dark:#efe8d8;
+    --brass:#b08d57;
+    --brass-dark:#8a6c3f;
+    --accent:#8c3b2e;
+    --line:#d8cfb8;
+    --text:#2c2a26;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600&family=Source+Code+Pro:wght@500&display=swap');
+  body{
+    background:var(--parchment);
+    color:var(--text);
+    font-family:'Source Sans 3', sans-serif;
+    line-height:1.5;
+  }
+  h1,h2,.title{font-family:'Fraunces', serif;}
+  .meta-mono{font-family:'Source Code Pro', monospace;}
+
+  header.hero{
+    max-width:900px;
+    margin:0 auto;
+    padding:64px 24px 32px;
+    text-align:left;
+  }
+  .eyebrow{
+    font-family:'Source Code Pro', monospace;
+    font-size:13px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--brass-dark);
+    margin-bottom:12px;
+  }
+  h1{
+    font-size:44px;
+    font-weight:700;
+    color:var(--ink);
+    margin:0 0 16px;
+    line-height:1.1;
+  }
+  .lede{
+    font-size:18px;
+    max-width:640px;
+    color:#4a4740;
+  }
+  .lede a{color:var(--accent);}
+
+  .staff{
+    max-width:900px;
+    margin:32px auto;
+    padding:0 24px;
+  }
+  .staff-lines{
+    height:34px;
+    background-image:repeating-linear-gradient(
+      to bottom,
+      var(--line) 0px, var(--line) 1px,
+      transparent 1px, transparent 8px
+    );
+  }
+
+  main{max-width:900px; margin:0 auto; padding:0 24px 40px;}
+
+  .category{margin-top:20px;}
+  .category-head{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    border-bottom:2px solid var(--ink);
+    padding-bottom:10px;
+    margin-bottom:6px;
+  }
+  .category-head h2{
+    font-size:26px;
+    color:var(--ink);
+    margin:0;
+  }
+  .category-count{
+    font-family:'Source Code Pro', monospace;
+    font-size:13px;
+    color:var(--brass-dark);
+  }
+
+  .piece{
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:4px 16px;
+    padding:20px 0;
+    border-bottom:1px solid var(--line);
+    align-items:start;
+  }
+  .piece:last-child{border-bottom:none;}
+  .piece-title{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:19px;
+    color:var(--ink);
+    grid-column:1;
+  }
+  .piece-composer{
+    font-size:14px;
+    color:#6b675e;
+    grid-column:1;
+  }
+  .piece-tags{
+    grid-column:1;
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-top:6px;
+  }
+  .tag{
+    font-family:'Source Code Pro', monospace;
+    font-size:11px;
+    letter-spacing:0.03em;
+    text-transform:uppercase;
+    background:var(--parchment-dark);
+    border:1px solid var(--line);
+    color:#5a5648;
+    padding:3px 8px;
+    border-radius:3px;
+  }
+  .piece-buy{
+    grid-column:2;
+    grid-row:1 / span 3;
+    align-self:center;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    align-items:flex-end;
+  }
+  .piece-buy a{
+    display:inline-block;
+    font-size:14px;
+    font-weight:600;
+    text-decoration:none;
+    white-space:nowrap;
+    padding:9px 16px;
+    border-radius:4px;
+  }
+  .piece-buy a:not(.yt){
+    color:#fff;
+    background:var(--accent);
+  }
+  .piece-buy a:not(.yt):hover{background:#732f24;}
+  .piece-buy a.yt{
+    color:var(--brass-dark);
+    background:transparent;
+    border:1px solid var(--brass);
+    padding:8px 15px;
+  }
+  .piece-buy a.yt:hover{background:var(--parchment-dark);}
+
+  .intro-note{
+    margin:0 0 40px;
+    font-size:14px;
+    color:#6b675e;
+  }
+
+  footer{
+    max-width:900px;
+    margin:0 auto;
+    padding:40px 24px 60px;
+    font-size:14px;
+    color:#6b675e;
+    border-top:1px solid var(--line);
+  }
+  footer a{color:var(--accent);}
+
+  @media (max-width:600px){
+    h1{font-size:32px;}
+    .piece{grid-template-columns:1fr;}
+    .piece-buy{grid-column:1; grid-row:auto; margin-top:10px; align-items:flex-start; flex-direction:row;}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="eyebrow">Noter.nu — Hans Bjermqvist</div>
+  <h1>Notarkiv: arrangemang för blåsorkester &amp; brassensemble</h1>
+  <p class="lede">
+    Fullständig katalog över mina utgivna arrangemang och kompositioner för blåsorkester,
+    brasskvintett och brassensemble. Varje titel visar besättning, svårighetsgrad, speltid
+    och pris. Köp sker via <a href="https://noter.nu/butik/">huvudbutiken på noter.nu</a>.
+  </p>
+</header>
+
+<div class="staff"><div class="staff-lines"></div></div>
+
+<main>
+
+  <section class="category">
+    <div class="category-head">
+      <h2>Blåsorkester</h2>
+      <span class="category-count">11 titlar</span>
+    </div>
+    <article class="piece">
+      <div class="piece-title">Den Gamla Bohuslänsvisan</div>
+      <div class="piece-composer">Trad</div>
+      <div class="piece-tags">
+        <span class="tag">Blåsorkester</span> <span class="tag">Grad 3</span> <span class="tag">2:58 min</span> <span class="tag">120 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Den-gamla-Bohuslansvisan-p780395873">Köp noter</a><a class="yt" href="https://youtu.be/CEP1ZPFppEc">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Fanfar</div>
+      <div class="piece-composer">Hans Bjermqvist</div>
+      <div class="piece-tags">
+        <span class="tag">Blåsorkester</span> <span class="tag">Grad 3</span> <span class="tag">0:38 min</span> <span class="tag">80 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Fanfar-p780395891">Köp noter</a><a class="yt" href="https://youtu.be/TrqTNB87riQ">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Jämtländsk Brudmarsch</div>
+      <div class="piece-composer">Trad</div>
+      <div class="piece-tags">
+        <span class="tag">Blåsorkester</span> <span class="tag">Grad 3</span> <span class="tag">3:13 min</span> <span class="tag">130 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Jamtlandsk-Brudmarsch-p783263855">Köp noter</a><a class="yt" href="https://youtu.be/5kFQTy-bJo4">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Let´s Dance with the Sugar Plum Fairy</div>
+      <div class="piece-composer">Pjotr Tjajkovskij</div>
+      <div class="piece-tags">
+        <span class="tag">Blåsorkester</span> <span class="tag">Grad 3</span> <span class="tag">3:21 min</span> <span class="tag">120 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Lets-Dance-with-the-Sugar-Plum-Fairy-p787364431">Köp noter</a><a class="yt" href="https://youtu.be/HdmUsMMLRw8">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Litet solo för Tuba</div>
+      <div class="piece-composer">Hans Bjermqvist</div>
+      <div class="piece-tags">
+        <span class="tag">Tuba - Blåsorkester</span> <span class="tag">Grad 2.5</span> <span class="tag">1:38 min</span> <span class="tag">120 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Litet-Solo-for-Tuba-p794442557">Köp noter</a><a class="yt" href="https://youtu.be/mM-VpVGvXuM">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">On Stage</div>
+      <div class="piece-composer">Hans Bjermqvist</div>
+      <div class="piece-tags">
+        <span class="tag">Blåsorkester</span> <span class="tag">Grad 3</span> <span class="tag">1:58 min</span> <span class="tag">130 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/On-Stage-p785338341">Köp noter</a><a class="yt" href="https://youtu.be/UfY-XLJ_OFA">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Rondo alla Turca</div>
+      <div class="piece-composer">W.A.Mozart</div>
+      <div class="piece-tags">
+        <span class="tag">Piccolo - Blåsorkester</span> <span class="tag">Grad 3.5</span> <span class="tag">4:13 min</span> <span class="tag">140 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Rondo-alla-Turca-for-Piccolo-och-Orkester-p780395903">Köp noter</a><a class="yt" href="https://youtu.be/w8DEQLDRDNg">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Rondo alla Turca</div>
+      <div class="piece-composer">W.A.Mozart</div>
+      <div class="piece-tags">
+        <span class="tag">Trumpet - Blåsorkester</span> <span class="tag">Grad 3.5</span> <span class="tag">2:35 min</span> <span class="tag">120 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Fran-Rondo-alla-Turca-Solotrumpet-med-orkester-p798823645">Köp noter</a><a class="yt" href="https://youtu.be/mx3tE-UlIbs">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Så Vadådå</div>
+      <div class="piece-composer">Hans Bjermqvist</div>
+      <div class="piece-tags">
+        <span class="tag">Blåsorkester</span> <span class="tag">Grad 3</span> <span class="tag">3:02 min</span> <span class="tag">120 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Sa-Vadada-p780729412">Köp noter</a><a class="yt" href="https://youtu.be/Cst0hBE8F8Q">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Trombon Marsch</div>
+      <div class="piece-composer">Hans Bjermqvist</div>
+      <div class="piece-tags">
+        <span class="tag">2 Tromboner - Blåsorkester</span> <span class="tag">Grad 3</span> <span class="tag">2:30 min</span> <span class="tag">120 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Trombon-Marsch-p780395907">Köp noter</a><a class="yt" href="https://youtu.be/-_18soQrVPs">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Värmlandsvisan</div>
+      <div class="piece-composer">Trad</div>
+      <div class="piece-tags">
+        <span class="tag">Basklarinett, Barytonsax - Blåsorkester</span> <span class="tag">Grad 3</span> <span class="tag">5:12 min</span> <span class="tag">130 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Varmlandsvisan-Solo-for-Barytonsax-och-Basklar-med-orkester-p768937108">Köp noter</a><a class="yt" href="https://youtu.be/_IJR5MPR9-o">Lyssna</a></div>
+    </article>
+  </section>
+
+  <div class="staff"><div class="staff-lines"></div></div>
+
+  <section class="category">
+    <div class="category-head">
+      <h2>Bleckblås — Övrigt</h2>
+      <span class="category-count">8 titlar</span>
+    </div>
+    <article class="piece">
+      <div class="piece-title">6 Folkvisor för Brasskvintett</div>
+      <div class="piece-composer">Trad</div>
+      <div class="piece-tags">
+        <span class="tag">Brasskvintett</span> <span class="tag">Grad 3</span> <span class="tag">10:53 min</span> <span class="tag">165 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/6-Folkvisor-for-Brasskvintett-p842149032">Köp noter</a><a class="yt" href="https://youtu.be/z3sXTb9S1hM">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Födelsedagsfesten</div>
+      <div class="piece-composer">Trad</div>
+      <div class="piece-tags">
+        <span class="tag">Brasskvintett - ingår i 6 visor för Brasskvintett</span> <span class="tag">Grad 3</span> <span class="tag">2:09 min</span> <span class="tag">45 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Fodelsedagsfesten-p842094916">Köp noter</a><a class="yt" href="https://youtu.be/d8JDulJiG0E">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Mikaelidagen</div>
+      <div class="piece-composer">Trad</div>
+      <div class="piece-tags">
+        <span class="tag">Brasskvintett - ingår i 6 visor för Brasskvintett</span> <span class="tag">Grad 3</span> <span class="tag">2:02 min</span> <span class="tag">45 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Mikaelidagen-p841121358">Köp noter</a><a class="yt" href="https://www.youtube.com/watch?v=ft8T9Le8hbM&amp;list=PLIlsRQvXWky5EZW_IzNWQrMrz2pG_kJHS&amp;index=7">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Mina getter går i skogen</div>
+      <div class="piece-composer">Trad</div>
+      <div class="piece-tags">
+        <span class="tag">Brasskvintett - ingår i 6 visor för Brasskvintett</span> <span class="tag">Grad 3</span> <span class="tag">1:27 min</span> <span class="tag">45 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Mina-getter-gar-i-skogen-p842053470">Köp noter</a><a class="yt" href="https://youtu.be/868zlAogzjM">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Trombon Marsch</div>
+      <div class="piece-composer">Hans Bjermqvist</div>
+      <div class="piece-tags">
+        <span class="tag">2 Tromboner + Brassensemble</span> <span class="tag">Grad 3</span> <span class="tag">2:30 min</span> <span class="tag">75 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Trombon-Marsch-p780395915">Köp noter</a><a class="yt" href="https://youtu.be/4-9JdK9a3gI">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Vaggvisa till min son Carl</div>
+      <div class="piece-composer">C.M. Bellman</div>
+      <div class="piece-tags">
+        <span class="tag">Brasskvintett - ingår i 6 visor för Brasskvintett</span> <span class="tag">Grad 3</span> <span class="tag">2:06 min</span> <span class="tag">45 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Vaggvisa-till-min-son-Carl-Bellmans-Vaggvisa-p842094886">Köp noter</a><a class="yt" href="https://youtu.be/ihKcrNtVFwU">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Vallvisa - Kulning</div>
+      <div class="piece-composer">Trad</div>
+      <div class="piece-tags">
+        <span class="tag">Brasskvintett - ingår i 6 visor för Brasskvintett</span> <span class="tag">Grad 3.5</span> <span class="tag">1:47 min</span> <span class="tag">35 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Vallvisa-Kulning-p842094830">Köp noter</a><a class="yt" href="https://youtu.be/Mg4oq9Z6Cj4">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Vittnareiks ära</div>
+      <div class="piece-composer">Trad</div>
+      <div class="piece-tags">
+        <span class="tag">Brasskvintett - ingår i 6 visor för Brasskvintett</span> <span class="tag">Grad 3</span> <span class="tag">1:22 min</span> <span class="tag">45 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Vittnareiks-ara-p842094904">Köp noter</a><a class="yt" href="https://youtu.be/msP2QApEd8Q">Lyssna</a></div>
+    </article>
+  </section>
+
+  <div class="staff"><div class="staff-lines"></div></div>
+
+  <section class="category">
+    <div class="category-head">
+      <h2>Bleckblås — Jul</h2>
+      <span class="category-count">11 titlar</span>
+    </div>
+    <article class="piece">
+      <div class="piece-title">10 Julduetter för Trombon</div>
+      <div class="piece-composer">Var.</div>
+      <div class="piece-tags">
+        <span class="tag">2 Tromboner Elev/Lärare</span> <span class="tag">Grad 2 till 3</span> <span class="tag">95 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/10-Julduetter-for-Trombon-p789434044">Köp noter</a><a class="yt" href="https://youtu.be/igBfBA2g2-s">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">10 Julduetter för Trumpet</div>
+      <div class="piece-composer">Var.</div>
+      <div class="piece-tags">
+        <span class="tag">2 Trumpeter Elev/Lärare</span> <span class="tag">Grad 2 till 3</span> <span class="tag">95 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/10-Julduetter-for-Trumpet-p789410374">Köp noter</a><a class="yt" href="https://youtu.be/PtBPFASY1t4">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Deck the Halls</div>
+      <div class="piece-composer">Trad</div>
+      <div class="piece-tags">
+        <span class="tag">Brassensemble</span> <span class="tag">Grad 3</span> <span class="tag">1:19 min</span> <span class="tag">45 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Deck-the-Halls-p790529670">Köp noter</a><a class="yt" href="https://youtu.be/-cb_qYzhrDg">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Ding Dong Merrily on High</div>
+      <div class="piece-composer">Trad</div>
+      <div class="piece-tags">
+        <span class="tag">Brassensemble</span> <span class="tag">Grad 3</span> <span class="tag">1:38 min</span> <span class="tag">45 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Ding-Dong-Merrily-on-High-p790529695">Köp noter</a><a class="yt" href="https://youtu.be/S6aJXjsH0cI">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Jingle Bells</div>
+      <div class="piece-composer">Trad</div>
+      <div class="piece-tags">
+        <span class="tag">Brassensemble</span> <span class="tag">Grad 3</span> <span class="tag">1:51 min</span> <span class="tag">35 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Jingle-Bells-p792093459">Köp noter</a><a class="yt" href="https://youtu.be/ZIpkoKjBWig">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Jullåtar för Brassensemble</div>
+      <div class="piece-composer">Var.</div>
+      <div class="piece-tags">
+        <span class="tag">Brassensemble</span> <span class="tag">Grad 3</span> <span class="tag">165 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Jullatar-for-Brassensemble-Paket-p780420069">Köp noter</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Kul runt Granen - 5 Julsånger</div>
+      <div class="piece-composer">Trad</div>
+      <div class="piece-tags">
+        <span class="tag">Brassensemble</span> <span class="tag">Grad 3</span> <span class="tag">3:13 min</span> <span class="tag">45 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Kul-runt-Granen-p792097090">Köp noter</a><a class="yt" href="https://youtu.be/19kAOA2aEfY">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Luciakväll - 4 luciasånger</div>
+      <div class="piece-composer">Trad</div>
+      <div class="piece-tags">
+        <span class="tag">Brassensemble</span> <span class="tag">Grad 3</span> <span class="tag">3:24 min</span> <span class="tag">45 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Luciakvall-p792088972">Köp noter</a><a class="yt" href="https://youtu.be/d522EaL9flI">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">NuTändas Tusen Juleljus</div>
+      <div class="piece-composer">Trad</div>
+      <div class="piece-tags">
+        <span class="tag">Brassensemble</span> <span class="tag">Grad 3</span> <span class="tag">1:43 min</span> <span class="tag">35 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/Nu-Tandas-Tusen-Juljeljus-p792110551">Köp noter</a><a class="yt" href="https://youtu.be/TSc8UycPhOQ">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">O Come All Ye Faithful</div>
+      <div class="piece-composer">J.F. Wade</div>
+      <div class="piece-tags">
+        <span class="tag">Brassensemble</span> <span class="tag">Grad 3</span> <span class="tag">2:05 min</span> <span class="tag">55 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/O-Come-All-Ye-Faithful-p790068019">Köp noter</a><a class="yt" href="https://youtu.be/AJi7BrkwHsQ">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">While Shepards Watching their Flocks</div>
+      <div class="piece-composer">Este´s Psalter</div>
+      <div class="piece-tags">
+        <span class="tag">Brassensemble</span> <span class="tag">Grad 3</span> <span class="tag">1:44 min</span> <span class="tag">45 kr</span>
+      </div>
+      <div class="piece-buy"><a href="https://noter.nu/butik/While-shepards-watching-their-flocks-p798074862">Köp noter</a><a class="yt" href="https://youtu.be/2-d0xZawLtM">Lyssna</a></div>
+    </article>
+  </section>
+
+  <div class="staff"><div class="staff-lines"></div></div>
+
+  <section class="category">
+    <div class="category-head">
+      <h2>Arrangemang via Sheet Music Direct</h2>
+      <span class="category-count">6 titlar</span>
+    </div>
+    <article class="piece">
+      <div class="piece-title">Hot Stuff</div>
+      <div class="piece-composer">Bellotte, Forsey, Faltermeier &middot; Donna Summer</div>
+      <div class="piece-tags">
+        <span class="tag">Blåsorkester</span> <span class="tag">Grad 3.5</span> <span class="tag">4:09 min</span> <span class="tag">Se Länk</span>
+      </div>
+      <div class="piece-buy"><a href="https://www.sheetmusicdirect.com/se/ID_No/2030184/Product.aspx">Köp noter</a><a class="yt" href="https://www.youtube.com/watch?v=0fQq_jHVS5I">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">I Know Him so Well </div>
+      <div class="piece-composer">Rice, Andersson, Ulvaeus &middot; from Chess</div>
+      <div class="piece-tags">
+        <span class="tag">Blåsorkester</span> <span class="tag">Grad 3</span> <span class="tag">3:49 min</span> <span class="tag">Se Länk</span>
+      </div>
+      <div class="piece-buy"><a href="https://www.sheetmusicdirect.com/se/ID_No/1985946/Product.aspx">Köp noter</a><a class="yt" href="https://www.youtube.com/watch?v=CE6uVERJBVk">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Måndagsbarn</div>
+      <div class="piece-composer">Linnros, Maggio &middot; Veronica Maggio</div>
+      <div class="piece-tags">
+        <span class="tag">Blåsorkester</span> <span class="tag">Grad 3</span> <span class="tag">3:52 min</span> <span class="tag">Se Länk</span>
+      </div>
+      <div class="piece-buy"><a href="https://www.sheetmusicdirect.com/se/ID_No/1997370/Product.aspx">Köp noter</a><a class="yt" href="https://www.youtube.com/watch?v=AlhX09DPrmc">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Uncover</div>
+      <div class="piece-composer">Jones, Sepehrmanesh, Habolin &middot; Zara Larsson</div>
+      <div class="piece-tags">
+        <span class="tag">Blåsorkester</span> <span class="tag">Grad 3</span> <span class="tag">3:48 min</span> <span class="tag">Se Länk</span>
+      </div>
+      <div class="piece-buy"><a href="https://www.sheetmusicdirect.com/se/ID_No/2004501/Product.aspx">Köp noter</a><a class="yt" href="https://www.youtube.com/watch?v=ijazKZ7sjkI">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Venus</div>
+      <div class="piece-composer">R. V. Leeuwen &middot; Bananarama</div>
+      <div class="piece-tags">
+        <span class="tag">Blåsorkester</span> <span class="tag">Grad 3.5</span> <span class="tag">3:14 min</span> <span class="tag">Se Länk</span>
+      </div>
+      <div class="piece-buy"><a href="https://www.sheetmusicdirect.com/se/ID_No/2026639/Product.aspx">Köp noter</a><a class="yt" href="https://www.youtube.com/watch?v=E_SP-byVROc">Lyssna</a></div>
+    </article>
+
+    <article class="piece">
+      <div class="piece-title">Whenever, Wherever</div>
+      <div class="piece-composer">Shakira, Mitchell, Esefan &middot; Shakira</div>
+      <div class="piece-tags">
+        <span class="tag">Blåsorkester</span> <span class="tag">Grad 3</span> <span class="tag">3:07 min</span> <span class="tag">Se Länk</span>
+      </div>
+      <div class="piece-buy"><a href="https://www.sheetmusicdirect.com/se/ID_No/2006266/Product.aspx">Köp noter</a><a class="yt" href="https://www.youtube.com/watch?v=OpZnhKMQIrM">Lyssna</a></div>
+    </article>
+  </section>
+
+  <div class="staff"><div class="staff-lines"></div></div>
+
+
+
+</main>
+
+<footer>
+  Noter.nu — arrangemang för blåsorkester och brassensemble av Hans Bjermqvist.
+  Handla i <a href="https://noter.nu/butik/">huvudbutiken</a>.
+</footer>
+
+</body>
+</html>
